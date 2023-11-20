@@ -13,7 +13,6 @@ drive.mount('/content/gdrive')
 !unzip gdrive/My\ Drive/dataset/malaria_cell_dataset.zip
 
 import numpy as np
-
 import matplotlib.pyplot as plt
 import os
 import cv2
@@ -58,7 +57,7 @@ image = dataset[5]
 
 plt.imshow(image)
 
-"""#Build a model"""
+"""Build a model"""
 
 from keras.layers import Convolution2D, MaxPooling2D, Flatten, Dense, BatchNormalization, Dropout
 from keras.models import Sequential
